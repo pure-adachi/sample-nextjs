@@ -1,0 +1,9 @@
+version: "3"
+services:
+  myapp:
+    build: .
+    command: yarn dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/myapp
